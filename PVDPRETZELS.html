@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>PVD Pretzels</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <a-scene>
+   
+  <a-entity position="0 2 0">
+  <a-entity camera look-controls></a-entity>
+</a-entity>
+  <a-assets>
+    <img id="Loft" src="https://raw.githubusercontent.com/christopher-loftllc/AFrame/Loft-Clouds/Loft%20Logo_White.png">
+    <img id="shadow" src="https://raw.githubusercontent.com/christopher-loftllc/AFrame/Loft-Clouds/wide-shadow.png">
+    <a-asset-item id="pretzel" src="https://raw.githubusercontent.com/christopher-loftllc/AFrame/Loft-Clouds/pretzel-flat.dae"></a-asset-item>
+    </a-assets>
+  
+  <a-image src="#shadow" position="-3 -2 -9" scale="3 4 1">
+         <a-animation attribute="rotation" from="90 360 0" to="90 0 0" dur="5000"  delay="5" easing="linear" repeat="indefinite"
+                     fill="both">
+       </a-animation>
+  </a-image>
+  
+  
+
+  
+    <a-image src="#shadow" position="-14 -2 16" scale="3 6 1" opacity=".2">
+         <a-animation attribute="scale" from="3 6 1" to="1 6 1" dur="1250"  delay="5" easing="linear" repeat="indefinite"
+                      direction="alternate">
+       </a-animation>
+  </a-image>
+  
+   <a-collada-model src="#pretzel" scale="100 100 100" >
+       <a-animation attribute="rotation" from="0 -45 0" to="0 315 0" dur="5000"  delay="5" easing="linear" repeat="indefinite"
+                     fill="both" >
+       </a-animation>
+        <a-animation attribute="position" from="-13 0 12" to="-13 -1 12" dur="2000"  delay="5" easing="ease-sine" repeat="indefinite"
+                     direction="alternate">
+       </a-animation>
+  </a-collada-model>
+  
+     <a-collada-model src="#pretzel" scale="100 100 100" >
+       <a-animation attribute="rotation" from="0 -45 0" to="0 315 0" dur="5000"  delay="5" easing="linear" repeat="indefinite"
+                     fill="both" >
+       </a-animation>
+        <a-animation attribute="position" from="32 52 80" to="32 48 80" dur="2000"  delay="5" easing="ease-sine" repeat="indefinite"
+                     direction="alternate">
+       </a-animation>
+  </a-collada-model>
+
+     <a-collada-model src="#pretzel" position="0 0 6" scale="100 100 100" >
+       <a-animation attribute="rotation" from="0 360 0" to="0 0 0" dur="5000"  delay="5" easing="linear" repeat="indefinite"
+                     fill="both">
+       </a-animation>
+        <a-animation attribute="position" from="-2 0 -10" to="-2 -1 -10" dur="2000"  delay="5" easing="ease-sine" repeat="indefinite"
+                     direction="alternate">
+       </a-animation>
+  </a-collada-model>
+  
+  
+       <a-collada-model src="#pretzel" position="0 0 6" scale="100 100 100" >
+       <a-animation attribute="rotation" from="0 0 0" to="0 360 0" dur="5000"  delay="5" easing="linear" repeat="indefinite"
+                     fill="both">
+       </a-animation>
+        <a-animation attribute="position" from="20 0 -10" to="20 -1 -10" dur="2000"  delay="5" easing="ease-sine" repeat="indefinite"
+                     direction="alternate">
+       </a-animation>
+  </a-collada-model>
+  
+         <a-collada-model src="#pretzel" position="0 0 6" scale="100 100 100" >
+       <a-animation attribute="rotation" from="0 360 0" to="0 0 0" dur="5000"  delay="5" easing="linear" repeat="indefinite"
+                     fill="both">
+       </a-animation>
+        <a-animation attribute="position" from="17 -1 17" to="17 0 17" dur="2000"  delay="5" easing="ease-sine" repeat="indefinite"
+                     direction="alternate">
+       </a-animation>
+  </a-collada-model>
+  
+  
+  <a-light type="point" color="#ffffff" intensity="3" position="40 20 -40"></a-light>
+  
+
+  
+  <a-sky src="https://raw.githubusercontent.com/christopher-loftllc/AFrame/Loft-Clouds/PVD_1.jpg">
+  </a-sky>
+</a-scene>
+    
+    
+    
+    
+  </body>
+</html>
